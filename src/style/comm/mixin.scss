@@ -1,0 +1,15 @@
+@mixin basic_css($width,$height){
+  width:$width;
+  height: $height;
+}
+
+@mixin basic_box($margin,$padding){
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin FCalc($property, $exp) {
+  #{$property}: -moz-calc(#{$exp});
+  #{$property}: -webkit-calc(#{$exp});
+  #{$property}: calc(#{$exp});
+}

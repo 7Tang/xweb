@@ -1,0 +1,54 @@
+@import "../../comm/mixin";
+
+.product-condition-box{
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 26px;
+  margin-left: 28px;
+  height: 112px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei UI";
+  .p-c-row{
+    align-items: center;
+  }
+  .p-c-l1{
+    color: #333333;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  .p-c-m{
+    margin-left: 6px;
+  }
+  .p-c-l2{
+    margin: 0 3px;
+  }
+  .p-c-input{
+    padding: 0 10px;
+    border-radius: 2px;
+    color: #333333;
+    border: 1px solid #dadada;
+    cursor: inherit;
+    outline: none;
+  }
+  .p-c-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  }
+  .p-c-input::-webkit-input-placeholder:-moz-placeholder::-moz-placeholder:-ms-input-placeholder{
+    color: #b7b7b7;
+  }
+  .product-name-input{
+    @include basic_css(120px,36px);
+    font-size: 12px;
+  }
+  .date-input{
+    @include basic_css(105px,36px);
+    font-size: 12px;
+  }
+  .search-btn{
+    @include basic_css(74px, 36px);
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #bdbcbe;
+    margin-left: 4px;
+  }
+}

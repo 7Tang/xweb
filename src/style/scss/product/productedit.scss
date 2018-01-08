@@ -1,0 +1,232 @@
+@import "../../comm/mixin";
+
+.edit-btn{
+  font-family: "Microsoft YaHei UI";
+  font-size: 18px;
+  color: #3fa82e;
+  cursor: pointer;
+}
+.product-edit-container{
+  .pec-title{
+    margin: 20px 32px 0;
+    padding-left: 4px;
+    padding-bottom: 18px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .pec-border{
+    //min-width: 778px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .pec-base-info{
+    align-items: center;
+    margin-left: 34px;
+    margin-right: 34px;
+    .pec-base-img{
+      @include basic_css(91px,91px);
+      margin-right: 20px;
+    }
+    .pec-base-label{
+      margin-left: 4px;
+      margin-right: 18px;
+    }
+    .pec-base-name{
+      margin-right: 20px;
+      font-family: "Microsoft YaHei UI";
+      font-size: 16px;
+      color: #333333;
+    }
+  }
+  .pec-hr{
+    //min-width: 1078px;
+    margin: 0 34px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .pec-hr-blank{
+    margin-top: 30px;
+    margin-bottom: 6px;
+  }
+  .pec-row{
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 34px;
+  }
+  .pec-first-line-top{
+    margin-top: 30px;
+  }
+  .pec-other-line-top{
+    margin-top: 18px;
+  }
+  .pec-cell{
+    align-items: center;
+  }
+  .pec-font{
+    text-align: right;
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    color: #767676;
+  }
+  .pec-img-top{
+    margin-top: 24px;
+  }
+  .pec-l1{
+    margin-left: 4px;
+    margin-right: 18px;
+    width: 130px;
+  }
+  .pec-val1{
+    width: 220px;
+  }
+  .pec-val2{
+    margin-top: 24px;
+    //img{
+    //  @include basic_css(80px,80px);
+    //  margin-right: 20px;
+    //}
+    .image-box{
+      @include basic_css(50px,50px);
+      margin-right: 20px;
+      background: url("/static/image/icon/add.png") no-repeat;
+      background-size: 50px 50px;
+    }
+    .upload-input{
+      display: none;
+    }
+  }
+  .pec-img-desc{
+    margin-top: 18px;
+    margin-left: 148px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 15px;
+    color: #767676;
+  }
+  .pec-cert-row{
+    align-items: center;
+  }
+  .pec-cert-title{
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    color: #767676;
+    text-align: center;
+  }
+  .pec-title-blank1{
+    min-width: 120px;
+    margin-left: 18px;
+    margin-right: 16px;
+  }
+  .pec-title-blank2{
+    min-width: 160px;
+    margin-right: 16px;
+  }
+  .pec-title-blank3{
+    min-width: 250px;
+    margin-right: 22px;
+  }
+  .pec-title-blank4{
+    min-width: 100px;
+    margin-right: 22px;
+  }
+  .pec-to{
+    width: 30px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+    color: #767676;
+    text-align: center;
+  }
+  .pec-view-update{
+    min-width: 100px;
+    margin-right: 22px;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #3fa82e;
+  }
+  .pec-vertical-line{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .pec-cert-delete{
+    @include basic_css(18px,18px);
+    background: url("/static/image/icon/close1.png") center no-repeat;
+    background-size: 18px 18px;
+  }
+  .pec-cert-delete:hover{
+    background: url("/static/image/icon/close.png") center no-repeat;
+  }
+  .pec-cert-add{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    color: #3fa82e;
+  }
+  .pec-batch-delete{
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #3fa82e;
+  }
+  .pec-batch-info-cell{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pec-code-blank{
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    color: #333333;
+    margin: 0 4px;
+  }
+  .pec-input{
+    @include basic_css(148px,32px);
+    padding: 0 5px;
+  }
+  .pec-other-input{
+    @include basic_css(148px,32px);
+    padding: 0 5px;
+  }
+  .pec-cert-name-input{
+    @include basic_css(120px,32px);
+    padding: 0 5px;
+  }
+  .pec-cert-authority-input{
+    @include basic_css(150px,32px);
+    padding: 0 5px;
+  }
+  .pec-cert-date-input{
+    @include basic_css(72px,32px);
+    padding: 0 5px;
+  }
+  .pec-code-input{
+    @include basic_css(100px,32px);
+    padding: 0 5px;
+  }
+  .pec-select{
+    @include basic_css(160px,36px);
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid #dfdfdf;
+    background: url(/static/image/icon/arrow.png) center right 10px no-repeat;
+  }
+  .pec-type-select{
+    @include basic_css(108px,32px);
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #333333;
+    border: 1px solid #dfdfdf;
+    background: url(/static/image/icon/arrow.png) center right 10px no-repeat;
+  }
+  .pec-blank{
+    margin-right: 9px;
+  }
+  .pec-btn{
+    padding: 80px 0;
+    text-align: center;
+    .pec-bl{
+      margin-right: 20px;
+    }
+  }
+}

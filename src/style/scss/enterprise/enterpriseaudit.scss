@@ -1,0 +1,49 @@
+@import "../../comm/mixin";
+
+.enterprise-audit-list{
+  padding: 30px 22px 30px;
+  min-width: 1158px;
+  .enterprise-audit-table{
+    width: 100%;
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #333333;
+    border-collapse: collapse;
+    thead tr th{
+      height: 62px;
+      background-color: #f4f4f4;
+    }
+    tbody tr td{
+      padding: 0 18px;
+      height: 74px;
+      text-align: center;
+    }
+    tbody tr{
+      border-bottom: 1px solid #dadada;
+    }
+    tbody tr:hover {
+      background-color: rgba(107, 110, 114, 0.1);
+    }
+    .td-w1{
+      width: 200px;
+    }
+    .both{
+      background-color: #f8f8f8;
+    }
+  }
+  .audit-btn{
+    @include basic_css(74px, 44px);
+    font-family: "Microsoft YaHei UI";
+    color: #ffffff;
+    background-color: #3fa82e;
+    border: 1px solid #bdbcbe;
+    margin-right: 12px;
+  }
+  .modify-btn{
+    @include basic_css(74px, 44px);
+    font-family: "Microsoft YaHei UI";
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #bdbcbe;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../comm/mixin";
+
+.product-list{
+  padding: 0 22px 30px;
+  .product-table{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    width: 100%;
+    //min-width: 1158px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #333333;
+    border-collapse: collapse;
+    thead tr th{
+      height: 42px;
+      padding: 0 18px;
+      background-color: #f4f4f4;
+    }
+    tbody tr td{
+      padding: 0 18px;
+      height: 62px;
+      text-align: center;
+    }
+    tbody tr{
+      border-bottom: 1px solid #dadada;
+    }
+    tbody tr:hover {
+      background-color: rgba(107, 110, 114, 0.1);
+    }
+    .p-td1{
+      width: 19px;
+      padding-left: 18px;
+      padding-right: 17px;
+    }
+    .p-td2{
+      width: 140px;
+      text-align: left;
+    }
+    .p-td-row{
+      align-items: center;
+    }
+    .p-img{
+      @include basic_css(91px,91px);
+      margin-right: 32px;
+    }
+    .p-n{
+      width: 220px;
+    }
+    .td-color{
+      color: #239510;
+    }
+    .both{
+      background-color: #f8f8f8;
+    }
+  }
+}

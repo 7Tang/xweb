@@ -1,0 +1,32 @@
+.batch-list {
+  padding: 0 22px 30px;
+  }
+  .batch-list .batch-table {
+    width: 100%;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    color: #333333;
+    border-collapse: collapse; }
+    .batch-list .batch-table thead tr th {
+      height: 62px;
+      background-color: #f4f4f4; }
+    .batch-list .batch-table tbody tr td {
+      padding: 0 18px;
+      height: 74px;
+      text-align: center; }
+    .batch-list .batch-table tbody tr {
+      border-bottom: 1px solid #dadada; }
+    .batch-list .batch-table tbody tr:hover {
+      background-color: rgba(107, 110, 114, 0.1); }
+    .batch-list .batch-table .td-w0 {
+      width: 19px;
+      padding-left: 18px;
+      padding-right: 17px; }
+    .batch-list .batch-table .td-w1 {
+      width: 200px; }
+    .batch-list .batch-table .td-color {
+      color: #239510; }
+    .batch-list .batch-table .both {
+      background-color: #f8f8f8; }
+
+/*# sourceMappingURL=productbatch.css.map */

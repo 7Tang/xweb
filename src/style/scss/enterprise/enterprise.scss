@@ -1,0 +1,80 @@
+@import "../../comm/mixin";
+
+.enterprise-container{
+
+  .ent-title{
+    margin: 20px 32px 0;
+    padding-left: 4px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dfdfdf;
+    font-family: "Microsoft YaHei UI";
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .ent-font{
+    text-align: right;
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    color: #767676;
+  }
+  .ent-font1{
+    font-family: "Microsoft YaHei UI";
+    font-size: 16px;
+    color: #333333;
+  }
+  .ent-l1{
+    margin-top: 31px;
+    margin-right: 36px;
+    width: 170px;
+  }
+  .ent-l2{
+    margin-top: 31px;
+    margin-right: 36px;
+    width: 190px;
+  }
+  .ent-l3{
+    margin-top: 21px;
+    margin-right: 36px;
+    width: 170px;
+  }
+  .ent-val1{
+    margin-top: 31px;
+    min-width: 200px;
+  }
+  .ent-val2{
+    margin-top: 20px;
+    min-width: 200px;
+    margin-bottom: 0;
+    img{
+      @include basic_css(136px,98px);
+    }
+  }
+  .ent-val3{
+    margin-top: 21px;
+    min-width: 200px;
+  }
+  .ent-val4{
+    margin-top: 21px;
+    min-width: 200px;
+    .ent-desc{
+      min-width:80px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-family: "Microsoft YaHei UI";
+      font-size: 14px;
+      color: #333333;
+      background-color: #f4f4f4;
+      margin-right: 12px;
+      border: 1px solid #e6e6e6;
+    }
+  }
+  .ent-interval{
+    margin-right: 10px;
+  }
+  .ent-blank{
+    padding-bottom: 100px;
+  }
+}
+

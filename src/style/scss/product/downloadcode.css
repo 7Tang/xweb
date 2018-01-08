@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE5"
+        on line 15 of downloadcode.scss
+
+10:     margin-right: 56px;
+11:   }
+12:   .dcc-cell-border-bottom{
+13:     border-bottom: 3px solid #3fa82e;
+14:   }
+15:   /* 商品码 ---------------------------------*\/
+16:   .dcc-input{
+17:     @include basic_css(284px,44px);
+18:     font-size: 18px;
+19:   }
+20:   .dcc-select{
+
+Backtrace:
+downloadcode.scss:15
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1297:in `block in find_encoding_error'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each_with_index'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `find_encoding_error'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:905:in `check_sass_encoding'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:436:in `check_encoding!'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:392:in `_to_tree'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+C:/Isoft/Ruby23-x64/bin/scss:22:in `load'
+C:/Isoft/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 15 of downloadcode.scss\A \A 10:     margin-right: 56px;\A 11:   }\A 12:   .dcc-cell-border-bottom{\A 13:     border-bottom: 3px solid #3fa82e;\A 14:   }\A 15:   /* 商品码 ---------------------------------*/\A 16:   .dcc-input{\A 17:     @include basic_css(284px,44px);\A 18:     font-size: 18px;\A 19:   }\A 20:   .dcc-select{"; }

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>xweb</title>
+
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-family: "Microsoft YaHei UI";
+    }
+    .content-cond-title {
+      padding: 0;
+      margin: 0;
+      border-bottom: 1px solid #dfdfdf;
+      width: 100%;
+      height: 74px;
+      line-height: 74px;
+      color: #333333;
+    }
+
+    .content-cond-title .x-cell {
+      border-bottom: 3px solid #3fa82e;
+      margin: 0 56px 0 30px;
+      font-size: 20px;
+    }
+
+    .content-cond-title .un-x-cell {
+      margin: 0 56px 0 30px;
+      font-size: 20px;
+    }
+
+    .common-cond-box {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 26px;
+      margin-left: 28px;
+      height: 112px;
+      font-size: 14px;
+    }
+
+    .createbtn,
+    .searchbtn {
+      border-radius: 5px;
+      outline: 0;
+      cursor: pointer;
+    }
+
+    .createbtn {
+      width: 100px;
+      height: 34px;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #3fa82e;
+    }
+    .searchbtn {
+      width: 74px;
+      height: 34px;
+      border: 1px solid #bdbcbe;
+      margin-left: 4px;
+      color: #333333;
+      background-color: #ffffff;
+    }
+
+    .common-cond-right {
+      align-items: center;
+      -webkit-box-align: center;
+    }
+
+    .common-cond-right input[type='text'] {
+      width: 120px;
+      height: 34px;
+      padding: 0 6px;
+      border: 1px solid #dadada;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .date-input {
+      width: 110px;
+      padding: 0 6px;
+    }
+    .datepicker>input {
+      padding: 0 6px;
+    }
+
+    .data-list {
+      padding: 0 22px 30px;
+    }
+
+    .list-title,
+    .list-content-1,
+    .list-content-2{
+      display: flex;
+      background-color: #f4f4f4;
+      height: 42px;
+      justify-content: center;
+      align-items: center;
+    }
+    .list-content-1 {
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #dadada;
+    }
+    .list-content-2 {
+      background-color: #ffffff;
+      border-bottom: 1px solid #dadada;
+    }
+
+    .list-content-1:hover,
+    .list-content-2:hover {
+      background-color: rgba(107, 110, 114, 0.1);
+    }
+
+    .flex-1 {
+      flex: 1;
+      text-align: center;
+    }
+    .flex-2 {
+      flex: 2;
+      text-align: center;
+    }
+    .flex-3 {
+      flex: 3;
+      text-align: center;
+    }
+
+    .pec-title{
+      border-bottom: 1px solid #dfdfdf;
+      margin: 20px 32px 0;
+      padding: 0 0 18px 4px;
+      font-size: 22px;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    .pec-row{
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      /*justify-content: space-between;*/
+      margin: 16px 34px 0;
+      font-size: 16px;
+    }
+    .pec-cell{
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+    }
+
+    .pec-cell{
+      align-items: center;
+    }
+    .pec-font{
+      margin-left: 4px;
+      margin-right: 18px;
+      width: 130px;
+      text-align: right;
+      color: #767676;
+    }
+    .pec-val1{
+      width: 220px;
+    }
+
+    .pec-input{
+      width: 148px;
+      height: 32px;
+      padding: 0 6px;
+    }
+
+    .pec-select {
+      width: 160px;
+      height: 36px;
+      padding: 0 10px;
+      border-radius: 2px;
+      font-size: 16px;
+      color: #333333;
+      border: 1px solid #dfdfdf;
+      background: url(/static/image/icon/arrow.png) center right 10px no-repeat;
+    }
+  </style>
+</html>

@@ -1,0 +1,224 @@
+@import "../../comm/mixin";
+
+.enterprise-edit-container{
+  min-width: 1206px;
+  .ent-title{
+    min-width: 1078px;
+    margin: 40px 60px 0;
+    padding-left: 4px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dfdfdf;
+    font-family: "Microsoft YaHei UI";
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+  }
+  .ent-row{
+    align-items: center;
+    margin-top: 30px;
+  }
+  .ent-row1{
+    align-items: center;
+    margin-top: 18px;
+  }
+  .ent-font{
+    text-align: right;
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #767676;
+  }
+  .ent-l1{
+    margin-right: 18px;
+    width: 170px;
+  }
+  .ent-l2{
+    margin-right: 18px;
+    width: 190px;
+  }
+  .ent-l3{
+    margin-top: 30px;
+    margin-right: 18px;
+    width: 170px;
+  }
+  .ent-l4{
+    margin-top: 30px;
+    margin-right: 18px;
+    width: 190px;
+  }
+  .ent-val1{
+    min-width: 400px;
+  }
+  .ent-val2{
+    margin-top: 30px;
+    min-width: 400px;
+    img{
+      @include basic_css(80px,80px);
+      margin-right: 20px;
+    }
+  }
+  .ent-val3{
+    margin-top: 22px;
+  }
+  .ent-val4{
+    margin-top: 25px;
+    min-width: 400px;
+    img{
+      @include basic_css(52px,52px);
+      margin-right: 20px;
+    }
+    .ent-desc{
+      line-height: 50px;
+      padding: 0 15px;
+      text-align: center;
+      font-family: "Microsoft YaHei UI";
+      font-size: 20px;
+      color: #333333;
+      background-color: #f4f4f4;
+      margin-right: 18px;
+      border: 1px solid #e6e6e6;
+    }
+  }
+  .ent-input{
+    @include basic_css(220px,32px);
+    padding: 5px 10px;
+  }
+  .ent-select{
+    @include basic_css(190px,44px);
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #333333;
+    border: 1px solid #dfdfdf;
+    background: url(/static/image/icon/arrow.png) center right 10px no-repeat;
+  }
+  .ent-btn{
+    padding: 80px 0;
+    text-align: center;
+    .ent-bl{
+      margin-right: 20px;
+    }
+  }
+
+  .enterprise-range-close {
+    color: #a3a8ad;
+    border-radius: 12px;
+    line-height: 20px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .enterprise-range-close::before {
+    content: "\2716";
+  }
+  .enterprise-range-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+
+  .enterprise-range-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .enterprise-range-container {
+    width: 600px;
+    margin: 0px auto;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: SimHei;
+  }
+  .enterprise-range-top{
+    display: flex;
+    justify-content:flex-end
+  }
+  .enterprise-range-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .enterprise-range-title{
+    font-size: 24px;
+    font-family: SimHei;
+    color: #323334;
+    padding: 40px 10px 30px;
+    font-weight: bold;
+  }
+  .enterprise-range-content{
+    font-size: 14px;
+    font-family: SimSun;
+    line-height: 25px;
+    color: #323334;
+    padding: 0 10px 30px;
+    flex-wrap: wrap;
+  }
+  .enterprise-range-footer{
+    padding: 20px 10px 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .enterprise-range-primary{
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3fa82e;
+    font-family: "Microsoft YaHei UI";
+    text-decoration: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  .enterprise-range-default {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    font-family: "Microsoft YaHei UI";
+    color: #717478;
+    margin-left: 30px;
+    text-decoration: none;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+  .er-default{
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+  }
+  .er-primary{
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .enterprise-range-enter {
+    opacity: 0;
+  }
+
+  .enterprise-range-leave-active {
+    opacity: 0;
+  }
+  .enterprise-range-enter .enterprise-range-container,
+  .enterprise-range-leave-active .enterprise-range-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+

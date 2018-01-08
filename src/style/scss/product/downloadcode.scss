@@ -1,0 +1,183 @@
+@import "../../comm/mixin";
+.download-code-container{
+  .dcc-row{
+    padding: 23px 40px 0 37px;
+  }
+  .dcc-cell{
+    min-width: 66px;
+    padding-bottom: 22px;
+    text-align: center;
+    margin-right: 56px;
+  }
+  .dcc-cell-border-bottom{
+    border-bottom: 3px solid #3fa82e;
+  }
+  /* 商品码 ---------------------------------*/
+  .dcc-input{
+    @include basic_css(140px,36px);
+    font-size: 14px;
+  }
+  .dcc-select{
+    @include basic_css(140px,36px);
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333333;
+    border: 1px solid #dfdfdf;
+    background: url(/static/image/icon/arrow.png) center right 10px no-repeat;
+  }
+  .dcc-date-input{
+    @include basic_css(76px,36px);
+    font-size: 14px;
+  }
+  .dcc-search-btn{
+    @include basic_css(74px, 36px);
+    font-family: "Microsoft YaHei UI";
+    color: #ffffff;
+    background-color: #3fa82e;
+    border: 1px solid #bdbcbe;
+    margin-left: 18px;
+  }
+  .dcc-footer{
+    margin: 0 25px;
+    background-color: #ffffcc;
+    line-height: 70px;
+    text-align: center;
+    .dcc-btn{
+      @include basic_css(128px, 36px);
+      font-family: "Microsoft YaHei UI";
+      font-size: 18px;
+      color: #333333;
+      background-color: #ffffff;
+      border: 1px solid #dfdfdf;
+      border-radius: 2px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+    }
+    .dcc-btn:hover{
+      color: #ff6633;
+      border: 2px solid #ff6633;
+    }
+    .dcc-btn-blank{
+      margin-right: 16px;
+    }
+  }
+  /* 通用码 ---------------------------------*/
+  .dcc-general-code{
+    margin: 30px 0 30px 20px;
+    align-items: center;
+  }
+
+  .pro-general-code{
+    margin: 10px 0 10px 20px;
+    align-items: center;
+  }
+
+  .dcc-general-code-label{
+    font-family: "Microsoft YaHei UI";
+    color: #333333;
+    margin-right: 4px;
+  }
+  .dcc-download-number-input{
+    @include basic_css(150px,36px);
+    padding: 0 10px;
+    border: 1px solid #dadada;
+  }
+  .dcc-download-btn{
+    @include basic_css(90px, 36px);
+    font-family: "Microsoft YaHei UI";
+    color: #ffffff;
+    background-color: #3fa82e;
+    border: 1px solid #bdbcbe;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .dcc-download-desc{
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #767676;
+  }
+  .dcc-important{
+    color: #3fa82e;
+  }
+  .dcc-questions-answers{
+    margin: 0 15px;
+    padding: 24px 24px 34px;
+    background-color: #f8f8f8;
+    .dcc-questions{
+      font-family: "Microsoft YaHei UI";
+      font-size: 18px;
+      color: #333333;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .dcc-answers{
+      font-family: "Microsoft YaHei UI";
+      font-size: 16px;
+      color: #363636;
+      margin-bottom: 14px;
+    }
+    .dcc-rules{
+      font-family: "Microsoft YaHei UI";
+      font-size: 16px;
+      color: #3fa82e;
+    }
+    .dcc-rules-blank{
+      margin-right: 30px;
+    }
+  }
+  /* 下载记录 ---------------------------------*/
+  .download-record-list{
+    padding: 40px 22px 30px;
+    .download-record-table{
+      width: 100%;
+      font-family: "Microsoft YaHei UI";
+      font-size: 18px;
+      color: #333333;
+      border-collapse: collapse;
+      thead tr th{
+        height: 42px;
+        background-color: #f4f4f4;
+      }
+      tbody tr td{
+        padding: 0 18px;
+        height: 42px;
+        text-align: center;
+      }
+      tbody tr{
+        border-bottom: 1px solid #dadada;
+      }
+      tbody tr:hover {
+        background-color: rgba(107, 110, 114, 0.1);
+      }
+      .td-w0{
+        width: 19px;
+        padding-left: 18px;
+        padding-right: 17px;
+      }
+      .td-w1{
+        width: 200px;
+      }
+      .both{
+        background-color: #f8f8f8;
+      }
+    }
+    .dcc-download-again-btn{
+      @include basic_css(108px, 37px);
+      font-family: "Microsoft YaHei UI";
+      font-size: 16px;
+      color: #333333;
+      background-color: #ffffff;
+      border: 1px solid #bbbbbb;
+      border-radius: 2px;
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+    }
+    .dcc-download-again-btn:hover{
+      color: #3fa82e;
+      border-color: #3fa82e;
+    }
+  }
+}

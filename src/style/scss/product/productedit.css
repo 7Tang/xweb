@@ -1,0 +1,188 @@
+.edit-btn {
+  font-family: "Microsoft YaHei UI";
+  font-size: 18px;
+  color: #3fa82e;
+  cursor: pointer; }
+
+.product-edit-container { }
+  .product-edit-container .pec-title {
+    margin: 40px 62px 0;
+    padding-left: 4px;
+    padding-bottom: 18px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold; }
+  .product-edit-container .pec-border {
+    min-width: 1078px;
+    border-bottom: 1px solid #dfdfdf; }
+  .product-edit-container .pec-base-info {
+    align-items: center;
+    margin-left: 74px;
+    margin-right: 74px; }
+    .product-edit-container .pec-base-info .pec-base-img {
+      width: 91px;
+      height: 91px;
+      margin-right: 46px; }
+    .product-edit-container .pec-base-info .pec-base-label {
+      margin-left: 4px;
+      margin-right: 18px; }
+    .product-edit-container .pec-base-info .pec-base-name {
+      margin-right: 50px;
+      font-family: "Microsoft YaHei UI";
+      font-size: 20px;
+      color: #333333; }
+  .product-edit-container .pec-hr {
+    min-width: 1078px;
+    margin: 0 60px;
+    border-bottom: 1px solid #dfdfdf; }
+  .product-edit-container .pec-hr-blank {
+    margin-top: 30px;
+    margin-bottom: 6px; }
+  .product-edit-container .pec-row {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 64px; }
+  .product-edit-container .pec-first-line-top {
+    margin-top: 30px; }
+  .product-edit-container .pec-other-line-top {
+    margin-top: 18px; }
+  .product-edit-container .pec-cell {
+    align-items: center; }
+  .product-edit-container .pec-font {
+    text-align: right;
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+    color: #767676; }
+  .product-edit-container .pec-img-top {
+    margin-top: 24px; }
+  .product-edit-container .pec-l1 {
+    margin-left: 4px;
+    margin-right: 18px;
+    width: 170px; }
+  .product-edit-container .pec-val1 {
+    width: 348px; }
+  .product-edit-container .pec-val2 {
+    margin-top: 24px; }
+    .product-edit-container .pec-val2 img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px; }
+  .product-edit-container .pec-img-desc {
+    margin-top: 18px;
+    margin-left: 188px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 15px;
+    color: #767676; }
+  .product-edit-container .pec-cert-row {
+    align-items: center; }
+  .product-edit-container .pec-cert-title {
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+    color: #767676;
+    text-align: center; }
+  .product-edit-container .pec-title-blank1 {
+    min-width: 162px;
+    margin-left: 64px;
+    margin-right: 26px; }
+  .product-edit-container .pec-title-blank2 {
+    min-width: 278px;
+    margin-right: 26px; }
+  .product-edit-container .pec-title-blank3 {
+    min-width: 332px;
+    margin-right: 52px; }
+  .product-edit-container .pec-title-blank4 {
+    min-width: 100px;
+    margin-right: 52px; }
+  .product-edit-container .pec-to {
+    width: 30px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+    color: #767676;
+    text-align: center; }
+  .product-edit-container .pec-view-update {
+    min-width: 100px;
+    margin-right: 52px;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #3fa82e; }
+  .product-edit-container .pec-vertical-line {
+    margin-left: 5px;
+    margin-right: 5px; }
+  .product-edit-container .pec-cert-delete {
+    width: 18px;
+    height: 18px;
+    background: url("/static/image/icon/close1.png") center no-repeat;
+    background-size: 18px 18px; }
+  .product-edit-container .pec-cert-delete:hover {
+    background: url("/static/image/icon/close.png") center no-repeat; }
+  .product-edit-container .pec-cert-add {
+    margin-top: 36px;
+    margin-left: 64px;
+    font-family: "Microsoft YaHei UI";
+    font-size: 20px;
+    color: #3fa82e; }
+  .product-edit-container .pec-batch-delete {
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #3fa82e; }
+  .product-edit-container .pec-batch-info-cell {
+    justify-content: space-between;
+    align-items: center; }
+  .product-edit-container .pec-code-blank {
+    font-family: "Microsoft YaHei UI";
+    font-size: 18px;
+    color: #333333;
+    margin: 0 4px; }
+  .product-edit-container .pec-input {
+    width: 338px;
+    height: 32px;
+    padding: 5px; }
+  .product-edit-container .pec-other-input {
+    width: 178px;
+    height: 32px;
+    padding: 5px; }
+  .product-edit-container .pec-cert-name-input {
+    width: 150px;
+    height: 32px;
+    padding: 5px; }
+  .product-edit-container .pec-cert-authority-input {
+    width: 266px;
+    height: 32px;
+    padding: 5px; }
+  .product-edit-container .pec-cert-date-input {
+    width: 137px;
+    height: 32px;
+    padding: 5px; }
+  .product-edit-container .pec-code-input {
+    width: 155px;
+    height: 32px;
+    padding: 5px; }
+  .product-edit-container .pec-select {
+    width: 190px;
+    height: 44px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #333333;
+    border: 1px solid #dfdfdf;
+    background: url(/static/image/icon/arrow.png) center right 10px no-repeat; }
+  .product-edit-container .pec-type-select {
+    width: 108px;
+    height: 44px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #333333;
+    border: 1px solid #dfdfdf;
+    background: url(/static/image/icon/arrow.png) center right 10px no-repeat; }
+  .product-edit-container .pec-blank {
+    margin-right: 9px; }
+  .product-edit-container .pec-btn {
+    padding: 80px 0;
+    text-align: center; }
+    .product-edit-container .pec-btn .pec-bl {
+      margin-right: 20px; }
+
+/*# sourceMappingURL=productedit.css.map */

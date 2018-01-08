@@ -1,0 +1,72 @@
+/*
+Error: Invalid GBK character "\xE5"
+        on line 116 of ../comm/base.scss
+        from line 1 of index.scss
+
+111:   color: #808080;
+112: }
+113: .select{
+114:   font-family: "Microsoft YaHei UI";
+115:   outline: none;
+116:   /*将默认的select选择框样式清除*\/
+117:   appearance:none;
+118:   -moz-appearance:none;
+119:   -webkit-appearance:none;
+120: }
+121: .select::-ms-expand { display: none; }
+
+Backtrace:
+../comm/base.scss:116
+index.scss:1
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1297:in `block in find_encoding_error'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each_with_index'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `find_encoding_error'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:905:in `check_sass_encoding'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:436:in `check_encoding!'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:392:in `_to_tree'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Isoft/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+C:/Isoft/Ruby23-x64/bin/scss:22:in `load'
+C:/Isoft/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 116 of ../comm/base.scss\A         from line 1 of index.scss\A \A 111:   color: #808080;\A 112: }\A 113: .select{\A 114:   font-family: \"Microsoft YaHei UI\";\A 115:   outline: none;\A 116:   /*将默认的select选择框样式清除*/\A 117:   appearance:none;\A 118:   -moz-appearance:none;\A 119:   -webkit-appearance:none;\A 120: }\A 121: .select::-ms-expand { display: none; }"; }
