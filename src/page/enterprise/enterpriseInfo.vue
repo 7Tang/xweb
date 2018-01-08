@@ -58,7 +58,6 @@
       },
       enterpriseInfoSuccess: function (res) {
         if (res.data.result === 0) {
-          // todo 没数据看不出什么跟什么 =_=
           this.enterpriseInfo = res.data.data
         } else {
           if (res.data.message) {

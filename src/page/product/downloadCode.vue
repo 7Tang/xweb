@@ -103,7 +103,7 @@
         number: 10,   // 每页显示条数
         dlPageData: [],
         dlTotal: 0,
-        dlNumber: 0,
+        dlNumber: 10,
         checkradio: '',
         productname: '',
         dlproductname: '',
@@ -142,7 +142,7 @@
       getProductDataSuccess: function (_res) {
         if (_res.data.result === 0) {
           this.pageData = _res.data.data
-          this.total = _res.data.totalnum
+          this.total = this.pageData.length
           this.pageChange(1)
         } else {
           this.pageData = []
@@ -157,7 +157,7 @@
       getDLSuccess (_res) {
         if (_res.data.result === 0) {
           this.dlPageData = _res.data.data
-          this.dlTotal = _res.data.totalnum
+          this.dlTotal = this.dlPageData.length
           this.dlPageChange(1)
         } else {
           this.dlPageData = []
