@@ -98,9 +98,3 @@
     }
   }
 </script>
-<style lang="scss" scoped>
-  /*@import "../../style/scss/product/product-condition";
-  @import "../../style/scss/product/product-table";
-  @import "../../style/comm/mixin";*/
-
-</style>

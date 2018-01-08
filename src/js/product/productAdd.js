@@ -82,7 +82,7 @@ export default{
     },
     register: function () {
       if (this.$verify.check()) {
-        alert('12')
+        this.$tool.toast('校验', 1000)
       } else {
         console.log(this.$verify.$errors.productInfo.productname)
       }
@@ -107,10 +107,8 @@ export default{
       }
     },
     deleteUploadImg: function (_index) {
-      // todo 有上传居然没有删除图片的接口 =_=
+
     },
-    // todo 关于产品图片上传，接口调用无法通过测试，不知道返回的是什么数据，理论上传文件，注册产品时将图片与产品建立相应关系(即类似中间表)
-    // todo
     // 上传文件
     handleFileChange: function (_index) {
       let rFile = this.$refs.uploadPImg[_index]

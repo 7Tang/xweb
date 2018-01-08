@@ -183,7 +183,7 @@
         }
         let _vendorid = JSON.parse(sessionStorage.getItem('userinfo')).companyid
         let _json = {vendorid: _vendorid, vtypeid: this.checkradio, codecnt: parseInt(this.productcodecnt, 10), tagtype: _tagtype, barcode: this.barcode}
-        this.$api.api_base('/v1/xcode/download4Ccodeapi', 'POST', _json, this.getProductDataSuccess, this.failure)
+        this.$api.api_base('/v1/xcode/download4Ccodeapi', 'POST', _json, this.downSucess, this.downFail)
       },
       download4Xcodeapi: function () {
         if (!this.codecnt || this.codecnt.length < 0) {
@@ -191,7 +191,8 @@
           return false
         }
         let userinfo = JSON.parse(sessionStorage.getItem('userinfo'))
-        this.$api.api_base('/v1/xcode/download4Xcodeapi', 'POST', {vendorid: userinfo.companyid, userid: userinfo.userid, codecnt: parseInt(this.codecnt, 10)}, this.downSucess, this.downFail)
+        let _json = {vendorid: userinfo.companyid, userid: userinfo.userid, codecnt: parseInt(this.codecnt, 10)}
+        this.$api.api_base('/v1/xcode/download4Xcodeapi', 'POST', _json, this.downSucess, this.downFail)
       },
       toggleTab: function (_sign) {
         if (_sign === 1) {
@@ -207,14 +208,18 @@
         this.$router.push('/login')
       },
       downSucess: function (_res) {
-        let blob = new Blob([_res.data], {'type': 'text/plain;charset=UTF-8'})
-        let a = document.querySelector('#downa')
-        a.download = 'excel.txt'
-        a.href = window.URL.createObjectURL(blob)
-        a.click()
+        if (_res.data.result && _res.data.result === 1) {
+          this.downFail('下载失败')
+        } else {
+          let blob = new Blob([_res.data], {'type': 'text/plain;charset=UTF-8'})
+          let a = document.querySelector('#downa')
+          a.download = 'excel.txt'
+          a.href = window.URL.createObjectURL(blob)
+          a.click()
+        }
       },
       downFail: function (_res) {
-        console.log(_res)
+        this.$tool.toast(_res)
       }
     }
   }
@@ -254,7 +259,7 @@
   }
 
 
-  /* 通用码 ---------------------------------*/
+  /* 通用码 */
   .dcc-general-code{
     margin: 30px 0 30px 20px;
     align-items: center;
